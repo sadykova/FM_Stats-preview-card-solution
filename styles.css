@@ -1,0 +1,117 @@
+
+
+/* Reser */
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:hsl(233, 47%, 7%) ;
+}
+
+.accent{
+    color:hsl(277, 64%, 61%);
+}
+
+#card{
+    background: hsl(244, 38%, 16%);
+    height:57vh;
+    width:77vw;
+    color:#fff;
+    margin:21vh 11vw;
+    border-radius:10px;
+}
+
+#card .card-img{
+    background: url(./images/colorized_desktop.png) no-repeat center center/cover;
+    float:right;
+    width:48%;
+    min-height:100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+#card .card-content{
+    float:left;
+    width:52%;
+    min-height: 100%;
+    text-align:left;
+    padding:10vh 9vw 9vh 5vw; 
+}
+
+
+#card .card-content h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 700;
+    color: hsl(0, 0%, 100%);
+    margin-bottom:30px;
+}
+
+#card .card-content p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 400;
+    color:hsla(0, 0%, 100%, 0.75);
+    margin-bottom:50px;
+}
+
+.stats{
+    display:flex;
+    justify-content: space-between;
+}
+
+.stats h3{
+    font-size: 700;
+    font-weight: bold;
+}
+
+.stats .stats-text{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size:400;
+    color:hsla(0, 0%, 100%, 0.6);
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+
+    
+    #card .card-img{
+        float:none;
+        display:block;
+        width:100%;
+        height:50%;
+    }
+
+    #card .card-content{
+        float:none;
+        display:block;
+        width:100%;
+        text-align:center;
+        background-color: hsl(244, 38%, 16%);
+       
+    }
+
+    .stats{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .stats .stats-groups{
+        padding:10px;
+    }
+}
+
+
+
+
+
+
+
+
+
